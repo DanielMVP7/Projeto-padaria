@@ -1,0 +1,13 @@
+{% extends 'site/base.html' %}
+{% block conteudo %}
+<div class="info">
+    <h1>Confirme suas Informações</h1>
+    <h3>Pagamento será feito no ato da entrega!</h3>
+
+    {{form.as_p}}
+</div>
+<div class="botao6">
+    <a href="{% url 'pedidos' %}">Voltar</a>
+    <a href="{% url 'obrigado' %}">Confirmar compra</a>
+</div>
+{% endblock %}

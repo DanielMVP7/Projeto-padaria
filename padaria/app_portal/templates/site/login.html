@@ -1,0 +1,29 @@
+{% extends 'site/base.html' %}
+{% block conteudo %}
+<div class="login">
+    <form action="submit", method="POST">
+        {% csrf_token %}
+        <h2>Acesse sua conta</h2>
+        <div class="grupo_form">
+            <label for="username">Usuário</label>
+            <input type="text", class="form-control" id="username" name="username" 
+            placeholder="username">
+        </div>
+
+        <div class="grupo_form">
+            <label for="password">Senha</label>
+            <input type="password", class="form-control" id="password" name="password" 
+            placeholder="Digite sua senha">
+        </div>
+
+        <div>
+            {% for message in messages %}
+                <div class="alert alert-danger">
+                    <strong>Erro!</strong> {{ message }}
+                </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-success">Entrar</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

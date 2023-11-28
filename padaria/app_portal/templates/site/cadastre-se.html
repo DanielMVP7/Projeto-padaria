@@ -1,0 +1,13 @@
+{% extends 'site/base.html' %}
+{% block conteudo %}
+<div class="cadastre-se">
+    <h1>Cadastre-se</h1>
+    <form action="." method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-success"> Cadastrar</button>
+        <h3>Após cadastrar-se faça o <a href="{% url 'login' %}">Login</a></h3>
+        
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: OrangeRed;
+    background-image: linear-gradient(DarkOrange, OrangeRed);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
+    width: 95%;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+.botao1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: darkorange;
+    padding: 5px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 750px;
+    
+}
+.botao_login{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.botao2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: darkorange;
+    padding: 5px;
+    width: 200px;
+    margin-top: -57px;
+    border-radius: 10px;
+    margin-left: 950px;
+    
+}
+.botao_cadastre-se{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.produtos{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.login{
+    margin-top: 100px;
+}
+.cadastre-se{
+    margin-top: 100px;
+}
+.form_produtos{
+    display: flex;
+    flex-direction: column; /*mudar direcao entre coluna ou lista, inverte alinhamentos*/
+    justify-content: center; /*alinhar na horizontal*/
+    align-items: center; /*alinhar na vertical*/
+    box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
+    width: 500px;
+    border-radius: 10px; /*arredondar borda*/
+    padding: 30px; /*margem interna*/
+    margin-top: 100px;
+    background-color: darkorange;
+    background-image: linear-gradient(darkorange, OrangeRed);
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 35%;
+}
+#id_Pão{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+#id_Bolo{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+#id_Presunto{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+#id_Queijo{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.botao5{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: darkorange;
+    padding: 5px;
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 35%;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.tabela{
+    font-size: 20px;
+    margin-left: 1400px;
+    margin-top: -500px;
+    margin-right: 310px;
+    padding: 10px;
+    box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
+    border-radius: 10px;
+    
+}
+.info{
+    display: flex;
+    flex-direction: column; /*mudar direcao entre coluna ou lista, inverte alinhamentos*/
+    justify-content: center; /*alinhar na horizontal*/
+    align-items: center; /*alinhar na vertical*/
+    box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
+    width: 500px;
+    border-radius: 10px; /*arredondar borda*/
+    padding: 30px; /*margem interna*/
+    margin-top: 100px;
+    background-color: darkorange;
+    background-image: linear-gradient(darkorange, OrangeRed);
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 35%;
+}
+.botao6{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: darkorange;
+    padding: 5px;
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 35%;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.obrigado{
+    display: flex;
+    flex-direction: column; /*mudar direcao entre coluna ou lista, inverte alinhamentos*/
+    justify-content: center; /*alinhar na horizontal*/
+    align-items: center; /*alinhar na vertical*/
+    box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
+    width: 500px;
+    border-radius: 10px; /*arredondar borda*/
+    padding: 30px; /*margem interna*/
+    margin-top: 100px;
+    background-color: darkorange;
+    background-image: linear-gradient(darkorange, OrangeRed);
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 35%;
+}
+.cadastre-se{
+    display: flex;
+    flex-direction: column; /*mudar direcao entre coluna ou lista, inverte alinhamentos*/
+    justify-content: center; /*alinhar na horizontal*/
+    align-items: center; /*alinhar na vertical*/
+    box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
+    width: 650px;
+    border-radius: 10px; /*arredondar borda*/
+    padding: 30px; /*margem interna*/
+    margin-top: 100px;
+    background-color: darkorange;
+    background-image: linear-gradient(darkorange, OrangeRed);
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 35%;
+}
+p{
+    display: flex;
+    flex-direction: column; /*mudar direcao entre coluna ou lista, inverte alinhamentos*/
+    justify-content: center; /*alinhar na horizontal*/
+    align-items: center; /*alinhar na vertical*/
+    
+    border-radius: 10px; /*arredondar borda*/
+    
+}
+.login{
+    display: flex;
+    flex-direction: column; /*mudar direcao entre coluna ou lista, inverte alinhamentos*/
+    justify-content: center; /*alinhar na horizontal*/
+    align-items: center; /*alinhar na vertical*/
+    box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
+    width: 500px;
+    border-radius: 10px; /*arredondar borda*/
+    padding: 30px; /*margem interna*/
+    margin-top: 100px;
+    background-color: darkorange;
+    background-image: linear-gradient(darkorange, OrangeRed);
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 35%;
+}
