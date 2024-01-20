@@ -1,21 +1,23 @@
 {% extends 'site/base.html' %}
 {% block conteudo %}
 {% load static %}
-<div class="form_produtos">
-    <h1>Faça seu pedido</h1>
-    <h4>Quatidade:</h4>
-    {{form}}
-    
-</div>
-<div class="botao5">
-    <a href="{% url 'informacoes' %}">Pedir</a>
-    <a href="/logout/">Sair</a>
-</div>
-<div class="tabela">
-    <p>Tabela de preços:</p>
-    <p>Pão--------R$2,00</p>
-    <p>Bolo-------R$4,00</p>
-    <p>Presunto---R$5,00</p>
-    <p>Queijo-----R$6,00</p>
-</div>
+<section class="container_section">
+    <div class="form_produtos">
+        <h1>Faça seu pedido</h1>
+        <h4>Quatidade:</h4>
+        {{form}}
+
+    </div>
+    <div class="botao1">
+        <a class="botao01" href="{% url 'informacoes' %}">Pedir</a>
+        <a class="botao01" href="/logout/">Sair</a>
+    </div>
+    <div class="tabela">
+        <p>Tabela de preços:</p>
+        <p>Pão--------R$2,00</p>
+        <p>Bolo-------R$4,00</p>
+        <p>Presunto---R$5,00</p>
+        <p>Queijo-----R$6,00</p>
+    </div>
+</section>
 {% endblock %}

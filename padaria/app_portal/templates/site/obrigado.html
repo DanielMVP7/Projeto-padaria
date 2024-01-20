@@ -1,10 +1,15 @@
 {% extends 'site/base.html' %}
 {% block conteudo %}
-<div class="obrigado">
-    <h1>Agradecemos sempre a sua preferência!</h1>
-    <h2>O tempo de espera é de 30 á 50 minutos, Agradecemos a compreensão</h2>
-    <h3>O que deseja fazer agora?</h3>
-    <a href="{% url 'home' %}">Início</a>
-    <a href="{% url 'pedidos' %}">Pedir outra vez</a>
-</div>
+<section class="container_section">
+    <div class="obrigado">
+        <h1>Agradecemos sempre a sua preferência!</h1>
+        <h2>O tempo de espera é de 30 á 50 minutos, Agradecemos a compreensão</h2>
+        <h3>O que deseja fazer agora?</h3>
+    </div>
+
+    <div class="botao1">
+        <a class="botao01" href="{% url 'home' %}">Início</a>
+        <a class="botao01" href="{% url 'pedidos' %}">Pedir outra vez</a>
+    </div>
+</section>
 {% endblock %}

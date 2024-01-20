@@ -4,22 +4,42 @@
     box-sizing: border-box;
 }
 body{
-    background:
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main{
+    position: relative;
+    flex: 1 0 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.9s;
+}
+a:hover{
+    color: #111;
+    scale: 1.1;
 }
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
-    background: OrangeRed;
-    background-image: linear-gradient(DarkOrange, OrangeRed);
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(120deg, darkorange, OrangeRed);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
+#logonav{
+    height: 100px;
+}
 .logo{
+    position: absolute;
+    left: 185px;
     font-size: 32px;
     color: #fff;
     text-decoration: none;
@@ -36,26 +56,38 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: darkorange;
+    background-image: -webkit-linear-gradient(120deg,darkorange, OrangeRed);
     box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
     width: 95%;
     border-radius: 10px;
     padding: 30px;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 50px;
 
 }
 .botao1{
     display: flex;
     justify-content:center;
+    gap: 50px;
     align-items: center;
-    background: darkorange;
     padding: 5px;
-    width: 100px;
+    width: 100vw;
     margin-top: 20px;
     border-radius: 10px;
-    margin-left: 750px;
-    
 }
+.botao01{
+    background-color: darkorange;
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+}
+.botao01:hover{
+    background-color: #fff;
+    color: darkorange;
+}
+
 .botao_login{
     font-size: 32px;
     color: #fff;
@@ -88,12 +120,11 @@ body{
     font-size: 32px;
     font-weight: 700;
 }
-.login{
-    margin-top: 100px;
+
+.alert{
+    font-size: 15px;
 }
-.cadastre-se{
-    margin-top: 100px;
-}
+
 .form_produtos{
     display: flex;
     flex-direction: column; /*mudar direcao entre coluna ou lista, inverte alinhamentos*/
@@ -110,7 +141,6 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    margin-left: 35%;
 }
 #id_Pão{
     font-size: 20px;
@@ -138,9 +168,9 @@ body{
 }
 .botao5{
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
+    gap: 50px;
     align-items: center;
-    background: darkorange;
     padding: 5px;
     width: 500px;
     margin-top: 20px;
@@ -165,6 +195,7 @@ body{
     display: flex;
     flex-direction: column; /*mudar direcao entre coluna ou lista, inverte alinhamentos*/
     justify-content: center; /*alinhar na horizontal*/
+    text-align: center;
     align-items: center; /*alinhar na vertical*/
     box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
     width: 500px;
@@ -177,13 +208,12 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    margin-left: 35%;
 }
 .botao6{
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
+    gap: 50px;
     align-items: center;
-    background: darkorange;
     padding: 5px;
     width: 500px;
     margin-top: 20px;
@@ -194,9 +224,13 @@ body{
     text-decoration: none;
     font-weight: 700;
 }
+input{
+    border: none;
+    border-radius: 50px;
+}
 .obrigado{
     display: flex;
-    flex-direction: column; /*mudar direcao entre coluna ou lista, inverte alinhamentos*/
+    flex-direction: column;
     justify-content: center; /*alinhar na horizontal*/
     align-items: center; /*alinhar na vertical*/
     box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
@@ -210,7 +244,17 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    margin-left: 35%;
+}
+.obrigado h1, h2, h3{
+    text-align: center;
+}
+.container_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 100px;
 }
 .cadastre-se{
     display: flex;
@@ -228,7 +272,9 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    margin-left: 35%;
+}
+.btn_teste{
+    margin-left: 270px;
 }
 p{
     display: flex;
@@ -256,4 +302,55 @@ p{
     text-decoration: none;
     font-weight: 700;
     margin-left: 35%;
+    margin-top: 200px;
 }
+.footer{
+    height: 200px;
+    margin-top: 100px;
+    background: linear-gradient(120deg, darkorange, OrangeRed);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+.footer_2012{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.footer_daniel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    
+}
+
+.rede_social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/*deixar resposivo*/
+/* @media screen and (max-width: 720px) {
+    .descricao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        background-image: -webkit-linear-gradient(120deg,darkorange, OrangeRed);
+        box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.335);
+        width: 95%;
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+} */
